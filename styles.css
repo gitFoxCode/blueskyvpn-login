@@ -93,6 +93,7 @@ p{
 	border: none;
 	padding: 25px;
 	margin-top: 60px;
+	cursor: pointer;
 }
 .login__blankbtn{
 	display: block;
