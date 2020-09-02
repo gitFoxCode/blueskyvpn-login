@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*,*::after,*::before{
+	box-sizing: border-box;
+}
+
+.login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	position: relative;
+
+	font-family: "Poppins", sans-serif; /* Use your own font here */
+}
+.login__header{
+	font-size: 3em;
+	font-weight: bold;
+	color: #3F4D5D;
+	letter-spacing: 2px
+}
+.login__subtitle{
+	font-size: 1.5em;
+	margin: 20px 0;
+	color: #3F4D5D;
+}
+.login__form label{
+	display: block;
+	margin-top: 20px;
+}
+.login__form label:first-of-type{
+	margin-top: 0;
+}
+.login__form{
+	margin-top: 90px;
+	position: relative;
+	overflow: hidden;
+}
+.login__form__name{
+	display: block;
+	font-weight: 600;
+	color: #3F4D5D;
+	font-size: 1.1em;
+}
+.login__form__input{
+	width: 100%;
+	margin: 10px 0;
+	padding: 20px 10px;
+	font-size: 1.1em;
+	border: 1px solid #DDDDDD;
+	transition: transform, border 0.4s;
+	outline: none;
+}
+.login__form__input::placeholder{
+	font-style: italic;
+	color: #E6E6E6;
+}
+.login__form__input:focus{
+	border-bottom: 2px solid #DDD;
+	transition: transform, border 0.4s;
+	animation: 0.4s ease clickBounce;
+}
+.login__errorbox{
+	position: absolute;
+	width: 100%;
+	padding: 15px;
+	font-weight: 500;
+	background-color: #EC5959;
+	text-align: center;
+	color: #fff;
+	border-left: 5px solid #D62E2E;
+	left: 0;
+	transition: transform 0.5s;
+	transform: translateX(-105%);
+}
+.errorbox-success{
+	background-color: #59ECA7;
+	border-color: #33CF86;
+}
+.login__form__submit{
+	width: 100%;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	background-color: #F97141;
+	border: none;
+	padding: 25px;
+	margin-top: 60px;
+}
+.login__blankbtn{
+	display: block;
+	border: none;
+	background-color: transparent;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	font-family: "Poppins", sans-serif; /* Use your own font here */
+	text-decoration: underline;
+	cursor: pointer;
+	color: #3F4D5D;
+	font-style: italic;
+}
+.login__illustration{
+	width: 90%;
+	margin-left: 10%;
+}
+
+@keyframes clickBounce{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0.99);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+@media (max-width: 755px) {
+	.login__column:nth-of-type(2){
+		display: none;
+	}
+}
