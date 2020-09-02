@@ -9,6 +9,28 @@ p{
 	font: inherit;
 	vertical-align: baseline;
 }
+.login__nav{
+	position: absolute;
+	top: -70px;
+	left: 0;
+}
+.login__nav__back::before{
+	content: url(backline.svg);
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.login__nav a{
+	text-decoration: none;
+	color: #3F4D5D;
+	font-weight: bold;
+}
+.login__nav a:hover{
+	text-decoration: underline;
+}
+.login__column{
+	margin-top: 50px;
+	position: relative;
+}
 .login{
 	line-height: 1;
 	display: flex;
